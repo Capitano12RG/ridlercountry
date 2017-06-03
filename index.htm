@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<head>
+<title>
+Country Quiz
+</title>
+<style> 
+body {
+background-attachment: fixed;background-repeat:No-repeat;center;
+  background-size: cover;
+}
+
+#abc
+{  /*background-image: url("beach.jpg");*/
+background-color:rgba(255,255,255,0.8);border: 5px solid white;
+margin: auto;text-align: justify; width: 850px; box-shadow: 10px 10px 10px #888888; border: 5px solid white;font-variant: small-caps;
+/*margin-top:1cm;*/
+background-repeat:No-repeat;
+
+}
+
+button
+{
+    background:url("b3.jpg");
+    border: none;
+    color: Black;
+    padding: 15px 32px;/* to centralize text*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+width:400px;
+}
+</style>
+
+
+<script src="capitalquiz.js" type="text/javascript"></script>
+
+</head>
+<body onload="quiz()" background="flickr_2917292701.jpg">
+
+<div id="abc"></br>
+<img src="Riddler.png"  style="position: absolute;float:left;height:200px;"/>
+<h2><Center>Riddler series</center></h2><center>Chapter-Countries and their capitals</center><center><h4>By Rajat Gupta || 31-May-2017</h4></center>
+</br>
+</div>
+
+
+<div id="quiz13" style="width:830px;Height:250px;margin:auto;margin-top:20px;border: 5px solid white;Box-shadow:10px 10px 10px grey;background-color:rgba(255,255,255,0.8);padding:10px;">
+<br><center><img src="restart-button.png" title="Click on the button to start the quiz" style="font-variant: small-caps;width:200px;height:200px;margin:auto;" onClick="Start()"/></center>
+</div>
+
+<div id="quiz12" style="display:none;width:830px;Height:250px;margin:auto;margin-top:20px;border: 5px solid white;Box-shadow:10px 10px 10px grey;background-color:rgba(255,255,255,0.8);padding:10px;">
+<p id="qid" Style="font-variant:small-caps;font-size:120%;"></p>
+<center><b><p id="question" Style="font-variant:small-caps;font-size:120%;"></p></b></center>
+ <b> <button id="A1" textContent="abc" onClick="validation1(document.getElementsByTagName('Button')[0].textContent)"></button>&nbsp&nbsp
+  <button id="B1" textContent="abc" onClick="validation1(document.getElementsByTagName('Button')[1].textContent)"></button></br></br>
+  <button id="C1" textContent="abc" onClick="validation1(document.getElementsByTagName('Button')[2].textContent)"></button>&nbsp&nbsp
+  <button id="D1" textContent="abc" onClick="validation1(document.getElementsByTagName('Button')[3].textContent)"></button><br><br>
+</div>
+
+<div id="quiz15" style="display:none;width:830px;Height:250px;margin:auto;margin-top:20px;border: 5px solid white;Box-shadow:10px 10px 10px grey;background-color:rgba(255,255,255,0.8);padding:10px;">
+<img src='Batman.png' style='width:300px;height:250px;float:left;'></img>
+<p id="final12" Style="font-variant:small-caps;font-size:120%;"></p>
+<br><br> <img src='Ok-Download-PNG.png' title='Click here to continue' style="width:100px;height:100px;margin-left:2cm;"  textContent="abc" onClick="fnt123()"/>
+</div>
+
+
+<center><input type="text" id="Score12" style="display:none;width:400px;height:100;margin:auto;margin-top:20px;border: 5px solid white;Box-shadow:10px 10px 10px grey;background-color:BurlyWood;padding:10px; font-size:120%;font-variant:small-caps;" readonly><b><script>document.getElementById('Score12').value="                            Score = "+ 0</script></b>
+</input></center>
+
+
+
+
+
+<div id="quiz14" style="display:none;width:830px;background-image:url('b3.jpg');Height:400px;margin:auto;margin-top:20px;border: 5px solid white;Box-shadow:10px 10px 10px grey;background-color:Peru;padding:10px;background-attachment: fixed;background-repeat:No-repeat;
+  background-size: cover;">
+<center>
+<img src='58889250bc2fc2ef3a1860ab.png' style='width:50px;height:50px;'></img>
+<center>
+<b>
+
+<img src="DamonBraces_S016.png" style="float:left;width:300px;height:300px;"/>
+<img src="Batman-PNG.png" style="float:right;width:300px;height:300px;"/>
+<p style="Font-Size:150%;color:Black;
+    text-shadow: -1px -1px  black  ;margin-top:1cm;font-variant:small-caps;width:500px" id="final1">
+</p>
+</br></br>
+<center><img src='button_win_again.png' title='click to play again' style='width:100px;height:100px;' onClick='reload1()'></img></center>
+</b>
+</center>
+</div>
+</body>
